@@ -5,10 +5,12 @@ def close_enough(x: float, y: float, maximum_allowable_difference: float) -> boo
 
 def babylonian_square_root(N: float, estimate: float, precision: float) -> float:
     new_estimate = (estimate + (N / estimate)) / 2  # DO NOT CHANGE THIS LINE; LEAVE IT HERE.
+    while not close_enough(new_estimate, estimate, precision):
+        ...
     # N         - the number whose square root you are calculating
     # estimate  - the caller's first estimate
     # precision - how close to get before you return a value
     # Imitate the iterative process shown below in the Introduction section using a while loop.
     # Keep looping until new_estimate and estimate are CLOSE ENOUGH (hint, hint).
     # Return the last calculated estimate (i.e. new_estimate).
-    ...
+    
