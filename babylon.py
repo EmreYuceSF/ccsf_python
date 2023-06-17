@@ -42,7 +42,7 @@ print(f"Square root of {number} is {square_root:.4f}")
 print("**********************")
 
 how_close = square_root**2 / number
-if 1 - precision < how_close < 1 + precision: #crosscheck
+if 1 - precision < how_close < 1 + precision:  # crosscheck
     print("Calculation is correct")
 
 print("**********************\n")
