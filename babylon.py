@@ -31,7 +31,7 @@ def babylonian_square_root(N: float, estimate: float, precision: float) -> float
 
     return new_estimate
 
-
+'''
 number = 101
 estimate = 2
 precision = 1 / 10**5
@@ -46,3 +46,4 @@ if 1 - precision < how_close < 1 + precision:  # crosscheck
     print("Calculation is correct")
 
 print("**********************\n")
+'''
